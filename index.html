@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Cifra de Vigenere - Ana</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="text-center">
+            <h1 class="display-4">Cifra de Vigenere</h1>
+        </div>
+
+        <div class="container form-group col-md-4">
+            <h4>Texto:</h4>
+            <input placeholder="Insira o texto desejado" type="text" class="form-control" id="palavra">
+        </div>
+        <div class="container form-group col-md-4">
+            <h4>Chave:</h4>
+            <input type="text" id="chavecifra" placeholder="Insira a Chave (texto)" class="form-control">
+        </div>
+        <br>
+        <br>
+        <div class="text-center">
+            <button type="button" class="btn btn-secondary tamanhoigual" onclick="cifrar()">Criptografar</button>
+            <br>
+            <br>
+            <button type="button" class="btn btn-secondary tamanhoigual" onclick="decifrar()">Descriptografar</button>
+        </div>
+
+        <div class="jumbotron">
+                <div class="container form-group col-md-4">
+                    <label for=""></label>
+                    <input type="text" class="form-control" id="criptografia" value=" ">
+                </div>
+                <div class="container form-group col-md-4">
+                    <label for=""></label>
+                    <input type="text" class="form-control" id="descriptografia" value=" ">
+                </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
